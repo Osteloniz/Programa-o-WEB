@@ -1,0 +1,8 @@
+img{
+    width: 120px;
+    height: auto;
+}
+.bonitin{
+    background: rgb(5,74,6);
+    background: linear-gradient(90deg, rgba(5,74,6,1) 0%, rgba(9,121,18,1) 35%, rgba(9,255,0,1) 100%);
+}

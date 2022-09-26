@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css">
+
+    <title>Tech Toys</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-dark bonitin">
+
+        <!-- Logo -->
+        <a href="" class="navbar-brand" style="padding-left: 10px;"><img src="img/logoVerde.png" alt="Tech toys"></a>
+
+        <button class="navbar-toggler" data-toggle="collapse" 
+        data-target="#navegacao">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- navegacao -->
+        <div class="text-end"" >
+                    <button class="btn btn-success" type="button" style="background-color: #96E563; border: 0px; padding: 0px;">
+                        <a href="" class="nav-link" style="color:#13151C;">Login</a>
+                    </button>
+                    <button class="btn btn-info" type="button" style="background-color: #96E563; border: 0px; padding: 0px;">
+                        <a href="" class="nav-link" style="color: #13151C;">Registrar-se</a>
+                    </button>
+                    <button class="btn btn-info" type="button" style="background-color: #96E563; border: 0px; padding: 0px;" >
+                        <a href="" class="nav-link" style="color: #13151C;">Carrinho</a>
+                    </button>
+        </div>
+    </nav>
+    <div class="row justify-content-center principal mt-5">
+      <div class="col-12" style="text-align: center;">
+        <div class="col-12 col-md-3 offset-md-1 mt-1 mb-2 align-self-center">
+            <div style="justify-content: center;">
+                <img src="https://m.media-amazon.com/images/I/71abDY3PSkL._AC_SX679_.jpg"
+                class="card-img-top" alt="dinossauro">
+            </div>
+          <div class="card">
+              <div>
+                  <h3 class="card-title" style="font-family: cursive;">Detalhes do Produto</h3>
+                  <h5 class="card-body" style="font-family: cursive; text-align: right;">T-rex Mordida Feroz, Imaginext, Mattel, Multicolorido Mattel Multicolorido</h5>
+                  <p class="card-text" style="font-size: larger;text-align: end; margin:1px;"><b
+                          class="text-success">R$ 289,00</b></p>
+                  <p class="card-text" style="font-size: medium;text-align: end;">Até 10x sem Juros</p>
+                  <a href="index.html" class="btn btn-dark" >COMPRAR</a>
+              </div>
+          </div>
+          </div>
+          </div>
+          </div>
+          <div class="container mb-5">
+            <div class="row mt-5">
+                <div class="col-12">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Vídeo</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Foto</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Comentários</button>
+                        </li>
+                      </ul>
+                      <div class="tab-content" id="myTabContent">
+                        <div style="height: 720px;" class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                            <div class="col-sm-4 center">
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe width="1400" height="700" src="https://www.youtube.com/embed/jkuZONHz7T8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="height: 720px;" class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="https://d2figssdufzycg.cloudfront.net/Custom/Content/Products/13/50/13503120_imaginext-jurassic-world-t-rex-mordida-feroz-matte-334768_m3_637589175664871082.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="https://d2figssdufzycg.cloudfront.net/Custom/Content/Products/13/50/13503120_imaginext-jurassic-world-t-rex-mordida-feroz-matte-334768_m1_637589175616631187.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="https://d2figssdufzycg.cloudfront.net/Custom/Content/Products/13/50/13503120_imaginext-jurassic-world-t-rex-mordida-feroz-matte-334768_m1_637589175621269719.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                              </div>
+                        </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
