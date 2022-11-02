@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+
+    <title>Aula 8</title>
+  </head>
+  <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js"></script>
+    <script>
+        let carros = ['Stilo','Uno','Parati']
+
+        console.log(carros)
+        //removendo o último item (pop)
+        console.log(carros.pop());
+        //removendo o primeiro item
+        console.log(carros.shift());
+
+        console.log(carros);
+        //coloca no final do array (push)
+        console.log(carros.push('Escort'));
+        //coloca no inicio do array (unshift)
+        console.log(carros.unshift('Fusca'));
+        //imprimi em string (join) nesse caso separado por (, )
+        console.log(carros.join(', '));
+        //seleciona o carro do index 2
+        console.log(carros[2]);
+        //tamanho do array
+        console.log(carros.length);
+        //Encotrado o index pelo item
+        console.log(carros.indexOf('Fusca'));
+        carros.push('Ferrari')
+        //Filtrando os carros que começam com a letra F - traz um array idependente se só tem um elemento
+        console.log(carros.filter(c => c.startsWith('F')));
+        //Retornando o pirmeiro item que atenda a condição
+        console.log(carros.find(c => c.startsWith('F')));
+
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <label for="" class="form-label">Valor</label>
+    <input type="text" id="inputText">
+    <button onclick="adicionar()" class="btn btn-success" style="background-color: rgb(138, 80, 192);" >ADICIONAR</button>
+    <button onclick="atualizar()" class="btn btn-success">
+      ATUALIZAR
+    </button>
+    <table
+    class="table table-striped table-hover table-borderless table-primary align-middle">
+    <thead class="table-light">
+      <tr>
+        <td scope="col">Nome</td>
+      </tr>
+    </thead>
+    <tbody id="tbody"></tbody>
+    <tfoot></tfoot>
+  </table>
+  <label for="" class="form-label">Pesquisa</label>
+  <input type="text" id="search" onkeyup="pesquisar();">
+  <button onclick="pesquisar()" class="btn btn-success" style="background-color: rgb(138, 80, 192);" >ADICIONAR</button>
+
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js"></script>
+    <script>
+
+        
+        var input = document.getElementById('inputText');
+        var nomes =[];
+        
+        function adicionar() {
+            input.innerHTML = '';
+            nomes.push(input.value);
+            console.log(nomes);
+            //valor = document.getElementById('inputText').value="";
+            atualizar();
+
+        }function atualizar(){
+            let lista = document.getElementById('tbody');
+            lista.innerHTML = '';
+            nomes.forEach(n =>{
+                let tr = document.createElement('tr');
+                tr.innerHTML = '';
+                lista.appendChild(tr);
+            })
+
+      }function pesquisar(){
+        let pesq = document.getElementById('search').value;
+        let lista = document.getElementById('tbody');
+        lista.innerHTML='';
+        let arrayFiltro = nomes.filter(n =>n.startsWith(pesq));
+        arrayFiltro.forEach(n =>{
+            let tr = document.createElement('tr');
+            tr.innerHTML =n;
+            lista.appendChild(tr);
+        })
+      }
+    
+    </script>
+  </body>
+</html>
